@@ -1,0 +1,1 @@
+sudo docker run -a stdin -a stdout -i -t -p 80:80 -p 443:443 --net=host --restart unless-stopped --name apache -v /opt/Docker/apache/html/:/var/www/html -v /opt/Docker/apache/sites-available:/etc/apache2/sites-available -v /opt/Docker/apache/letsencrypt/:/etc/letsencrypt klajmajk/apache
